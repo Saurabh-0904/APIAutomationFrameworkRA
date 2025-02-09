@@ -5,10 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="30730f0e-2d59-4e47-8725-9138afe9770f" name="Changes" comment="Initial Commit">
+      <change afterPath="$PROJECT_DIR$/src/main/java/payloads/request/Auth.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/testingacademy/tests/crud/TC_Integration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/testngXMLs/testng_crud_integration.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/testingacademy/endpoints/APIConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/testingacademy/endpoints/APIConstants.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/testingacademy/modules/PayloadManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/testingacademy/modules/PayloadManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/testingacademy/utils/UtilExcel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/testingacademy/utils/UtilExcel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/testingacademy/actions/AsserActions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/testingacademy/actions/AssertActions.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/testingacademy/base/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/testingacademy/base/BaseTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/testingacademy/tests/crud/TCCerateBooking.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/testingacademy/tests/crud/TCCerateBooking.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/testingacademy/tests/crud/TCCerateBooking.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/testingacademy/tests/integration/TCCerateBooking.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/testngXMLs/testng_crud_post.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/testngXMLs/testng_crud_post.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -26,18 +33,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "Saurabh-0904"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Saurabh-0904&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/Saurabh-0904/APIAutomationFrameworkRA.git",
-    "accountId": "a2af29a1-11ec-4670-bccc-8fc5242cee24"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Saurabh-0904/APIAutomationFrameworkRA.git&quot;,
+    &quot;accountId&quot;: &quot;a2af29a1-11ec-4670-bccc-8fc5242cee24&quot;
   }
-}]]></component>
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 7
 }</component>
@@ -53,14 +60,19 @@
   "keyToString": {
     "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "TestNG.C:/Users/saura/APIAutomationFrameworkRA/src/test/testngXMLs/testng_crud_integration.xml.executor": "Run",
     "TestNG.C:/Users/saura/APIAutomationFrameworkRA/src/test/testngXMLs/testng_crud_post.xml.executor": "Run",
+    "TestNG.C:/Users/saura/APIAutomationFrameworkRA/testng.xml.executor": "Run",
+    "TestNG.TC_Integration.executor": "Run",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/saura/APIAutomationFrameworkRA/src/test/resources"
+    "last_opened_file_path": "C:/Users/saura/APIAutomationFrameworkRA/src/test/testngXMLs"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\saura\APIAutomationFrameworkRA\src\test\testngXMLs" />
       <recent name="C:\Users\saura\APIAutomationFrameworkRA\src\test\resources" />
       <recent name="C:\Users\saura\APIAutomationFrameworkRA\src\main\java\com\testingacademy\payloads" />
     </key>
@@ -71,7 +83,17 @@
       <recent name="com.testingacademy.utils" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="TestNG.C:/Users/saura/APIAutomationFrameworkRA/testng.xml">
+    <configuration name="C:/Users/saura/APIAutomationFrameworkRA/src/test/testngXMLs/testng_crud_integration.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="APIAutomationFrameworkRA" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/testngXMLs/testng_crud_integration.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="C:/Users/saura/APIAutomationFrameworkRA/src/test/testngXMLs/testng_crud_post.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="APIAutomationFrameworkRA" />
       <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/testngXMLs/testng_crud_post.xml" />
@@ -82,8 +104,38 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="C:/Users/saura/APIAutomationFrameworkRA/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="APIAutomationFrameworkRA" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/testng.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TC_Integration" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="APIAutomationFrameworkRA" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.testingacademy.tests.crud.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.testingacademy.tests.crud" />
+      <option name="MAIN_CLASS_NAME" value="com.testingacademy.tests.crud.TC_Integration" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.C:/Users/saura/APIAutomationFrameworkRA/testng.xml" />
+        <item itemvalue="TestNG.TC_Integration" />
+        <item itemvalue="TestNG.C:/Users/saura/APIAutomationFrameworkRA/src/test/testngXMLs/testng_crud_integration.xml" />
         <item itemvalue="TestNG.C:/Users/saura/APIAutomationFrameworkRA/src/test/testngXMLs/testng_crud_post.xml" />
       </list>
     </recent_temporary>

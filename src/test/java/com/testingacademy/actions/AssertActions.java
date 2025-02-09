@@ -1,6 +1,6 @@
 package com.testingacademy.actions;
 
-public class AsserActions {
+public class AssertActions {
 
 
 }

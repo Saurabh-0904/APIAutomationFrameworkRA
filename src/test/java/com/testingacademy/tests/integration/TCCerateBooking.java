@@ -1,5 +1,6 @@
-package com.testingacademy.tests.crud;
+package com.testingacademy.tests.integration;
 
+import com.fasterxml.jackson.core.JsonProcessingException;
 import com.testingacademy.base.BaseTest;
 import com.testingacademy.endpoints.APIConstants;
 import io.qameta.allure.Description;
@@ -28,7 +29,7 @@ public class TCCerateBooking extends BaseTest {
     @Owner("Saurabh")
     @Description("Verify that the CREATE Booking with the valid Payload, Status code 200")
     @Test
-    public void testPositivePOSTReq(){
+    public void testPositivePOSTReq() throws JsonProcessingException {
 
         requestSpecification.basePath(APIConstants.CREATE_UPDATE_BOOKING_URL);
         response = RestAssured.given().spec(requestSpecification)

@@ -1,8 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="All Test Suite">
-    <test verbose="2" preserve-order="true" name="APIAutomationFrameworkRA1">
+    <test verbose="2" preserve-order="true" name="C:/Users/saura/APIAutomationFrameworkRA">
         <classes>
+            <class name="com.testingacademy.tests.crud.TC_Integration">
+                <methods>
+                    <include name="testCreateBooking"/>
+                </methods>
+            </class>
             <class name="com.testingacademy.tests.integration.TCCerateBooking">
                 <methods>
                     <include name="testPositivePOSTReq"/>

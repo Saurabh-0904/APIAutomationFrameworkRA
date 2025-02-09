@@ -1,15 +1,20 @@
 package com.testingacademy.modules;
 
+import com.fasterxml.jackson.core.JsonProcessingException;
 import com.github.javafaker.Faker;
 import com.google.gson.Gson;
 import com.testingacademy.payloads.pojos.Booking2;
 import com.testingacademy.payloads.pojos.BookingDates2;
+import payloads.request.Auth;
+import com.fasterxml.jackson.databind.ObjectMapper;
 
 public class PayloadManager {
 
-    //Here we will convert JAVA OBJECT to JSON OBJECT
+    //Here we are converting a JAVA OBJECT to JSON OBJECT
 
-    public String createPayloadGson(){
+    public String createPayloadGson() throws JsonProcessingException {
+
+        ObjectMapper objectMapper = new ObjectMapper();
 
         Faker faker = new Faker();
         String expectFirstName = faker.name().firstName();
@@ -26,7 +31,8 @@ public class PayloadManager {
         booking2.setBookingdates(bookingDates2);
         booking2.setAdditionalneeds("Lunch");
 
-        System.out.println(booking2);
+        String payload = objectMapper.writerWithDefaultPrettyPrinter().writeValueAsString(booking2);
+
 
         //Object -> Json
 
@@ -35,6 +41,14 @@ public class PayloadManager {
         System.out.println(jsonStgringBooking);
         return jsonStgringBooking;
 
+    }
+
+    public String setToken() throws JsonProcessingException {
+        ObjectMapper objectMapper = new ObjectMapper();
+        Auth auth = new Auth();
+        auth.setUserName("admin");
+        auth.setPassword("password123");
+        return objectMapper.writerWithDefaultPrettyPrinter().writeValueAsString(auth);
     }
 
 

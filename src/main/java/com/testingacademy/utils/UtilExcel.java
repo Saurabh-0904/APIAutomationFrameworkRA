@@ -24,7 +24,8 @@ public class UtilExcel {
 
     static Workbook book;
     static Sheet sheet;
-    public static String FILE_NAME = "src/test/resources/TestData.xlsx"; //path given of excel sheet
+
+    public static String FILE_NAME = "src/test/resources/TestData.xlsx"; //path given of Excel sheet
 
     public static Object[][] getTestData (String sheetName) {
 
