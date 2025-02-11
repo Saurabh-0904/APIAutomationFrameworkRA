@@ -18,7 +18,7 @@ import static org.assertj.core.api.Assertions.*;
 
 public class TC_Integration extends BaseTest {
 
-    //Note: Commented printing statements coz it is not good to keep
+    //Note: Printing statements are Commented coz it is not good to keep
     //not deleted, kept for knowledge purpose in actual we need to delete it
 //----------------------------------------------------------------------------------------------------------------------
 
