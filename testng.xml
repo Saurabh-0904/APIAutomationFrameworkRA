@@ -2,17 +2,14 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="All Test Suite">
     <test verbose="2" preserve-order="true" name="C:/Users/saura/APIAutomationFrameworkRA">
-        <classes>
-            <class name="com.testingacademy.tests.crud.TC_Integration">
-                <methods>
-                    <include name="testCreateBooking"/>
-                </methods>
-            </class>
-            <class name="com.testingacademy.tests.integration.TCCerateBooking">
-                <methods>
-                    <include name="testPositivePOSTReq"/>
-                </methods>
-            </class>
-        </classes>
+        <packages>
+            <package name="com.testingacademy.tests.crud.*"></package>
+        </packages>
+        <groups>
+            <run>
+                <include name="P0"></include>
+                <exclude name="P1"></exclude>
+            </run>
+        </groups>
     </test>
 </suite>

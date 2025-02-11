@@ -3,16 +3,14 @@ package com.testingacademy.base;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.testingacademy.actions.AssertActions;
 import com.testingacademy.endpoints.APIConstants;
-import com.testingacademy.modules.PayloadManager;
+import payloads.request.PayloadManager;
 import io.restassured.RestAssured;
-import io.restassured.builder.RequestSpecBuilder;
 import io.restassured.http.ContentType;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 import io.restassured.response.ValidatableResponse;
 import io.restassured.specification.RequestSpecification;
 import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.Test;
 
 public class BaseTest {
 
@@ -27,6 +25,8 @@ public class BaseTest {
 
     @BeforeMethod (alwaysRun = true)
     public void setConfig(){
+
+        System.out.println("I am able to Run");
         payloadManager = new PayloadManager();
         assertActions = new AssertActions();
         requestSpecification = RestAssured.given()

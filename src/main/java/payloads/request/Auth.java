@@ -1,28 +1,30 @@
 package payloads.request;
 
+import com.google.gson.annotations.Expose;
+import com.google.gson.annotations.SerializedName;
+
 public class Auth {
 
-    private String userName = "admin";
+        @SerializedName("username")
+        @Expose
+        private String username;
+        @SerializedName("password")
+        @Expose
+        private String password;
 
-    private String password = "password123";
+        public String getUsername() {
+            return username;
+        }
 
-    public String getUserName() {
-        return userName;
-    }
+        public void setUsername(String username) {
+            this.username = username;
+        }
 
-    public void setUserName(String userName) {
-        this.userName = userName;
-    }
+        public String getPassword() {
+            return password;
+        }
 
-    public String getPassword() {
-        return password;
-    }
-
-    public void setPassword(String password) {
-        this.password = password;
-    }
-
-
-
-
+        public void setPassword(String password) {
+            this.password = password;
+        }
 }

@@ -5,18 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="30730f0e-2d59-4e47-8725-9138afe9770f" name="Changes" comment="Initial Commit">
-      <change afterPath="$PROJECT_DIR$/src/main/java/payloads/request/Auth.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/testingacademy/tests/crud/TC_Integration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/testngXMLs/testng_crud_integration.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/testingacademy/endpoints/APIConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/testingacademy/endpoints/APIConstants.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/testingacademy/modules/PayloadManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/testingacademy/modules/PayloadManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/testingacademy/utils/UtilExcel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/testingacademy/utils/UtilExcel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/testingacademy/actions/AsserActions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/testingacademy/actions/AssertActions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/testingacademy/modules/PayloadManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/payloads/request/PayloadManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/testingacademy/payloads/pojos/Booking2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/payloads/request/Booking.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/testingacademy/payloads/pojos/BookingDates2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/payloads/request/BookingDates.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/testingacademy/payloads/pojos/BookingResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/payloads/response/BookingResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/payloads/request/Auth.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/payloads/request/Auth.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/testingacademy/base/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/testingacademy/base/BaseTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/testingacademy/tests/crud/TCCerateBooking.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/testingacademy/tests/integration/TCCerateBooking.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/testngXMLs/testng_crud_post.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/testngXMLs/testng_crud_post.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/testingacademy/tests/crud/TC_Integration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/testingacademy/tests/crud/TC_Integration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/testingacademy/tests/integration/TCCerateBooking.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/testingacademy/tests/integration/TCCerateBooking.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testng.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,6 +63,7 @@
     "TestNG.C:/Users/saura/APIAutomationFrameworkRA/src/test/testngXMLs/testng_crud_post.xml.executor": "Run",
     "TestNG.C:/Users/saura/APIAutomationFrameworkRA/testng.xml.executor": "Run",
     "TestNG.TC_Integration.executor": "Run",
+    "TestNG.TC_Integration.testCreateBooking.executor": "Run",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/saura/APIAutomationFrameworkRA/src/test/testngXMLs"
@@ -80,6 +79,7 @@
       <recent name="C:\Users\saura\APIAutomationFrameworkRA\src\test\testngXMLs" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="payloads.response" />
       <recent name="com.testingacademy.utils" />
     </key>
   </component>
@@ -131,10 +131,29 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TC_Integration.testCreateBooking" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="APIAutomationFrameworkRA" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.testingacademy.tests.crud.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.testingacademy.tests.crud" />
+      <option name="MAIN_CLASS_NAME" value="com.testingacademy.tests.crud.TC_Integration" />
+      <option name="METHOD_NAME" value="testCreateBooking" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="TestNG.C:/Users/saura/APIAutomationFrameworkRA/testng.xml" />
         <item itemvalue="TestNG.TC_Integration" />
+        <item itemvalue="TestNG.TC_Integration.testCreateBooking" />
         <item itemvalue="TestNG.C:/Users/saura/APIAutomationFrameworkRA/src/test/testngXMLs/testng_crud_integration.xml" />
         <item itemvalue="TestNG.C:/Users/saura/APIAutomationFrameworkRA/src/test/testngXMLs/testng_crud_post.xml" />
       </list>

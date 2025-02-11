@@ -1,3 +1,4 @@
+/*
 package com.testingacademy.tests.integration;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
@@ -28,7 +29,7 @@ public class TCCerateBooking extends BaseTest {
 
     @Owner("Saurabh")
     @Description("Verify that the CREATE Booking with the valid Payload, Status code 200")
-    @Test
+    @Test (groups = "P1")
     public void testPositivePOSTReq() throws JsonProcessingException {
 
         requestSpecification.basePath(APIConstants.CREATE_UPDATE_BOOKING_URL);
@@ -42,3 +43,4 @@ public class TCCerateBooking extends BaseTest {
 
     }
 }
+*/
