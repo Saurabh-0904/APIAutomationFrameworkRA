@@ -47,7 +47,7 @@ public class TC_Integration extends BaseTest {
         assertThat(token).isNotNull().isNotEmpty();
 
         //given
-        requestSpecification.basePath(APIConstants.CREATE_UPDATE_BOOKING_URL);
+        requestSpecification.basePath(APIConstants.CREATE_BOOKING);
         //when
         response = RestAssured.given().spec(requestSpecification)
                 .when().body(payloadManager.createPayloadGson()).post();
@@ -74,11 +74,11 @@ public class TC_Integration extends BaseTest {
 
     }
 
-    //Update the booking with Token and Booking ID
+    //UPDATE the booking with Token and Booking ID
     @Test (groups = "P0", dependsOnMethods = {"testCreateBooking"})
-    public void testCreateAndUpdateBooking() throws JsonProcessingException {
+    public void testUpdateBooking() throws JsonProcessingException {
 
-        requestSpecification.basePath(APIConstants.CREATE_UPDATE_BOOKING_URL + "/" + bookingID);
+        requestSpecification.basePath(APIConstants.UPDATE_BOOKING + "/" + bookingID);
         response = RestAssured.given().spec(requestSpecification).cookie("token", token)
                 .when().body(payloadManager.updatePayload()).put();
         validatableResponse = response.then().log().all();
@@ -91,10 +91,10 @@ public class TC_Integration extends BaseTest {
     }
 
     //Delete Booking
-    @Test (groups = "P0", dependsOnMethods = {"testCreateAndUpdateBooking"})
+    @Test (groups = "P0", dependsOnMethods = {"testUpdateBooking"})
     public void testDeleteCreateBooking(){
 
-        requestSpecification.basePath(APIConstants.CREATE_UPDATE_BOOKING_URL + "/" + bookingID).cookie("token", token);
+        requestSpecification.basePath(APIConstants.UPDATE_BOOKING + "/" + bookingID).cookie("token", token);
         ValidatableResponse validatableResponse = RestAssured.given().spec(requestSpecification).auth().basic("admin", "password123").when().delete().then().log().all();
         validatableResponse.statusCode(201);
 
@@ -103,7 +103,7 @@ public class TC_Integration extends BaseTest {
     //Delete Booking
     @Test (groups = "P0", dependsOnMethods = {"testDeleteCreateBooking"})
     public void testDeleteBookingByGet(){
-        requestSpecification.basePath(APIConstants.CREATE_UPDATE_BOOKING_URL + "/" + bookingID);
+        requestSpecification.basePath(APIConstants.UPDATE_BOOKING + "/" + bookingID);
         response = requestSpecification.given().spec(requestSpecification).when().get();
         validatableResponse = response.then().log().all();
         validatableResponse.statusCode(404);

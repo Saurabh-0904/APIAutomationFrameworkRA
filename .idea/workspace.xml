@@ -5,16 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="30730f0e-2d59-4e47-8725-9138afe9770f" name="Changes" comment="Initial Commit">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/testingacademy/utils/FakerUtil.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/testingacademy/modules/PayloadManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/payloads/request/PayloadManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/testingacademy/payloads/pojos/Booking2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/payloads/request/Booking.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/testingacademy/payloads/pojos/BookingDates2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/payloads/request/BookingDates.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/testingacademy/payloads/pojos/BookingResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/payloads/response/BookingResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/payloads/request/Auth.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/payloads/request/Auth.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/testingacademy/base/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/testingacademy/base/BaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/testingacademy/endpoints/APIConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/testingacademy/endpoints/APIConstants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/payloads/request/PayloadManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/payloads/request/PayloadManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/testingacademy/tests/crud/TC_Integration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/testingacademy/tests/crud/TC_Integration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/testingacademy/tests/integration/TCCerateBooking.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/testingacademy/tests/integration/TCCerateBooking.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testng.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,21 +49,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "TestNG.C:/Users/saura/APIAutomationFrameworkRA/src/test/testngXMLs/testng_crud_integration.xml.executor": "Run",
-    "TestNG.C:/Users/saura/APIAutomationFrameworkRA/src/test/testngXMLs/testng_crud_post.xml.executor": "Run",
-    "TestNG.C:/Users/saura/APIAutomationFrameworkRA/testng.xml.executor": "Run",
-    "TestNG.TC_Integration.executor": "Run",
-    "TestNG.TC_Integration.testCreateBooking.executor": "Run",
-    "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/saura/APIAutomationFrameworkRA/src/test/testngXMLs"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;TestNG.C:/Users/saura/APIAutomationFrameworkRA/src/test/testngXMLs/testng_crud_integration.xml.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.C:/Users/saura/APIAutomationFrameworkRA/src/test/testngXMLs/testng_crud_post.xml.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.C:/Users/saura/APIAutomationFrameworkRA/testng.xml.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.TC_Integration.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.TC_Integration.testCreateBooking.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/saura/APIAutomationFrameworkRA/src/test/testngXMLs&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\saura\APIAutomationFrameworkRA\src\test\testngXMLs" />

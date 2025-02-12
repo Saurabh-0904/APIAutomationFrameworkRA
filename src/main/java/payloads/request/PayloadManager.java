@@ -4,9 +4,10 @@ import com.fasterxml.jackson.core.JsonProcessingException;
 import com.github.javafaker.Faker;
 import com.google.gson.Gson;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.testingacademy.utils.FakerUtil;
 import payloads.response.BookingResponse;
 
-public class PayloadManager {
+public class PayloadManager extends FakerUtil {
 
     ObjectMapper objectMapper ;
     //Here we are converting a JAVA OBJECT to JSON OBJECT
@@ -15,11 +16,10 @@ public class PayloadManager {
 
         objectMapper = new ObjectMapper();
 
-        Faker faker = new Faker();
-        String expectFirstName = faker.name().firstName();
+
         Booking booking2 = new Booking();
 
-        booking2.setFirstname(expectFirstName);
+        booking2.setFirstname(FakerUtil.getUsername());
         booking2.setLastname("Bhalerao");
         booking2.setTotalprice(1000);
         booking2.setDepositpaid(true);
